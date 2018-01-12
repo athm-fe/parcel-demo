@@ -1,0 +1,26 @@
+{
+  "name": "parcel",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index/index.html",
+    "start:index": "parcel index/index.html",
+    "start:list": "parcel list/index.html",
+    "build": "npm run build:index & npm run build:list",
+    "build:index": "parcel build index/index.html --out-dir build/index --public-url ./ --no-minify --no-cache",
+    "build:list": "parcel build list/index.html --out-dir build/list --public-url ./ --no-minify --no-cache",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.7.2",
+    "parcel-bundler": "^1.4.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "normalize.css": "^7.0.0"
+  }
+}

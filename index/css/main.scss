@@ -1,0 +1,10 @@
+/* Import SCSS file */
+@import "./_mixin.scss";
+@import "./_base.scss";
+@import "./_box.scss";
+
+.main {
+  /* Reference an image file */
+  background: url("../img/background.png");
+  color: red;
+}

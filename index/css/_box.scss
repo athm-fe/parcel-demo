@@ -1,0 +1,12 @@
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #fefefe;
+  &__hd {
+    text-align: center;
+  }
+  &__bd {
+    background-color: #f60;
+    @extend %clearfloat;
+  }
+}

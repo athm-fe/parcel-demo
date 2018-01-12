@@ -1,0 +1,69 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Parcel Demo</title>
+</head>
+<body>
+  <div class="topbar">Pracel Demo</div>
+  <h2>Image</h2>
+  <ul>
+    <li>
+      <h3>Relative Path, ./img/car.jpg</h3>
+      <img src="./img/car.jpg">
+    </li>
+    <li>
+      <h3>Error: Cannot resolve dependency, './img/not-found.jpg'</h3>
+      <!-- <img src="./img/not-found.jpg"> -->
+    </li>
+    <li>
+        <h3>Error: Cannot resolve dependency, '/absolute/path.jpg'</h3>
+        <!-- <img src="/absolute/path.jpg"> -->
+      </li>
+    <li>
+      <h3>Not Supported: background-image in style attribute</h3>
+      <!-- <div style="margin-bottom: 10px; background: #f60 url(./img/car.jpg); height: 90px;"></div> -->
+    </li>
+    <li>
+      <h3>Not Supported: background-image in style tag</h3>
+      <!-- <style>
+        .textBox {
+          margin-bottom: 10px;
+          background: #f60 url("./img/car.jpg");
+          height: 90px;
+        }
+      </style>
+      <div class="textBox"></div> -->
+    </li>
+  </ul>
+
+  <h2>Links</h2>
+  <ul>
+    <li>
+      <a href="#">Empty Link: #</a>
+    </li>
+    <li>
+      <a href="####">Empty Link: ####</a>
+    </li>
+    <li>
+      <a href="javascript:void(0)">Empty Link: javascript:void(0)</a>
+    </li>
+    <li>
+      <h3>Cannot resolve dependency, /test</h3>
+      <!-- <a href="/test">Absolute Path Link</a> -->
+    </li>
+    <li>
+      <h3>Cannot resolve dependency './other.html'</h3>
+      <!-- <a href="./other.html">Link to another page</a> -->
+    </li>
+  </ul>
+
+  <footer class="footer">
+    关于我们
+  </footer>
+
+  <!-- import a JavaScript bundle -->
+  <script src="./js/index.js"></script>
+</body>
+</html>
