@@ -35,7 +35,7 @@
 5. Packagers
 6. Final Bundle
 
-命令
+使用方法
 1. npm i (安装所需依赖)
 2. npm start (默认运行 index/index.html 文件)
 3. npm run start:list(运行 list/index.html , parcel 目前版本不支持 multi enties,可到 `package.json` 文件手动配置入口)
