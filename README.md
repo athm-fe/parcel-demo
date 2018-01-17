@@ -34,3 +34,9 @@
 4. Bundles Tree
 5. Packagers
 6. Final Bundle
+
+命令
+1. npm i (安装所需依赖)
+2. npm start (默认运行 index/index.html 文件)
+3. npm run start:list(运行 list/index.html , parcel 目前版本不支持 multi enties,可到 `package.json` 文件手动配置入口)
+4. npm run build (默认压缩 index 和 list 目录下文件,添加/更改目录需需改 `package.json`)
