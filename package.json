@@ -10,6 +10,7 @@
     "build": "npm run build:index & npm run build:list",
     "build:index": "parcel build index/index.html --out-dir build/index --public-url ./ --no-minify --no-cache",
     "build:list": "parcel build list/index.html --out-dir build/list --public-url ./ --no-minify --no-cache",
+    "build:inject": "node inject.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
