@@ -39,4 +39,5 @@
 1. npm i (安装所需依赖)
 2. npm start (默认运行 index/index.html 文件)
 3. npm run start:list(运行 list/index.html , parcel 目前版本不支持 multi enties,可到 `package.json` 文件手动配置入口)
-4. npm run build (默认压缩 index 和 list 目录下文件,添加/更改目录需需改 `package.json`)
+4. npm run build (默认压缩 index 和 list 目录下文件,添加/更改目录需修改 `package.json`)
+5. npm run build:inject (将 index/index.html 中引用的`非CDN`类型的静态文件注入到html文件中,更改/添加目录需修改 `inject.js` 中 `aassetFile` 变量)
