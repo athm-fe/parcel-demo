@@ -6,7 +6,8 @@ const modCommonJS = require('./modCommonJS');
 
 import 'normalize.css/normalize.css';
 import '../../components/footer/index.scss';
-import '../css/main.scss';
+import mainStyle from '../css/main.scss';
+import testStyle from '../css/test.css';
 
 import playURL from '../img/play.png';
 
@@ -16,6 +17,9 @@ topbar.init();
 
 console.log('modES6', modES6);
 console.log('modCommonJS', modCommonJS);
+
+console.log(mainStyle);
+console.log(testStyle);
 
 const play = document.createElement('div');
 play.innerHTML = `<img src="${playURL}">`;
