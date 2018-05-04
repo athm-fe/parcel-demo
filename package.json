@@ -1,5 +1,5 @@
 {
-  "name": "parcel",
+  "name": "parcel-demo",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,7 +13,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
-  "author": "",
+  "author": "jpuncle",
   "license": "MIT",
   "devDependencies": {
     "node-sass": "^4.7.2",
