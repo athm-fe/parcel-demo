@@ -3,9 +3,9 @@ import modES6 from './modES6';
 const modCommonJS = require('./modCommonJS');
 
 import 'normalize.css/normalize.css';
-import topbar from '../../components/topbar';
-import '../../components/footer/index.scss';
-import '../css/main.scss';
+import topbar from '../components/topbar';
+import '../components/footer/index.scss';
+import '../css/index.scss';
 import playURL from '../img/play.png';
 
 console.log('_', _);
