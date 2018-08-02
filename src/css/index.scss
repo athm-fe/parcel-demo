@@ -11,4 +11,9 @@
 
 .box {
   display: flex;
+  z-index: 10;
+}
+
+.layer {
+  z-index: 1000;
 }
