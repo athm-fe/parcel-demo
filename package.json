@@ -4,9 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --out-dir build/ --public-url ./ --no-cache",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prestart": "npm run clean",
+    "start": "parcel src/*.html --open",
+    "prebuild": "npm run clean",
+    "build": "parcel build src/*.html --out-dir build/ --public-url ./ --no-cache --no-source-maps",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean": "rm -rf ./.cache ./dist ./build"
   },
   "keywords": [],
   "author": "jpuncle",
